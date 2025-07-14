@@ -1,0 +1,89 @@
+  /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .contact-form {
+                margin: 0 1rem;
+                padding: 2rem;
+            }
+
+            .portfolio-filters {
+                padding: 0 1rem;
+            }
+
+            .filter-btn {
+                font-size: 0.9rem;
+                padding: 0.4rem 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .about-grid,
+            .services-grid,
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Responsive adjustments for timeline */
+        @media (max-width: 768px) {
+            .about-timeline {
+                padding: 1rem;
+            }
+
+            .timeline-line {
+                left: 30px;
+            }
+
+            .timeline-progress {
+                left: 30px;
+            }
+
+            .about-card {
+                margin-left: 120px !important;
+                margin-right: 0 !important;
+                max-width: none;
+            }
+
+            .about-card::before {
+                left: -90px !important;
+                right: auto !important;
+            }
+
+            .about-card::after {
+                left: -30px !important;
+                right: auto !important;
+                border-left-color: transparent !important;
+                border-right-color: white !important;
+            }
+
+            .timeline-dot {
+                left: 30px;
+            }
+        }
